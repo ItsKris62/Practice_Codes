@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <div class="navbar">
+                <div class="logo">Dashboard</div>
+                <div class="nav-items">
+                    <span>Sales Metrics</span>
+                    <button class="date-range">Jun 23 - Sep 23</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="metrics">
+                <div class="metric-card">
+                    <h3>Leads</h3>
+                    <p>26 <span class="percentage">+12%</span></p>
+                </div>
+                <div class="metric-card">
+                    <h3>Customers</h3>
+                    <p>123 <span class="percentage">+2.4%</span></p>
+                </div>
+                <div class="metric-card">
+                    <h3>Premium</h3>
+                    <p>$5634.35 <span class="percentage">+12%</span></p>
+                </div>
+                <div class="metric-card">
+                    <h3>Conversion</h3>
+                    <p>7.69% <span class="percentage">+12%</span></p>
+                </div>
+            </section>
+
+            <section class="charts">
+                <div class="chart-container">
+                    <h4>Sales</h4>
+                    <canvas id="salesChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h4>Commission vs ROAS</h4>
+                    <canvas id="roasChart"></canvas>
+                </div>
+            </section>
+
+            <section class="details">
+                <div class="table">
+                    <h4>Recent Leads</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jason Smith</td>
+                                <td>jason43@gmail.com</td>
+                                <td>Aug 16, 2022</td>
+                                <td>$354.00</td>
+                            </tr>
+                            <tr>
+                                <td>Luke Amsterdam</td>
+                                <td>lukearn@gmail.com</td>
+                                <td>Aug 16, 2022</td>
+                                <td>$540.00</td>
+                            </tr>
+                            <tr>
+                                <td>Jessica James Vasanth</td>
+                                <td>jessica@gmail.com</td>
+                                <td>Aug 16, 2022</td>
+                                <td>$386.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

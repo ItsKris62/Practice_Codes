@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: url('https://images.unsplash.com/photo-1493857671505-72967e2e2760?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.dashboard {
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-items span {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.date-range {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.metric-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    flex: 1;
+    margin: 0 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.metric-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #f5f5f5;
+}
+
+.metric-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.percentage {
+    color: lightgreen;
+    font-size: 1rem;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    flex: 1;
+    margin: 0 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chart-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.details {
+    margin-top: 2rem;
+}
+
+.table {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+}
+
+table thead {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
