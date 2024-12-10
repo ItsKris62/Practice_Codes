@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Design Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-bg': '#efeff0',
+            'secondary-bg': '#ffffff',
+            'cta': '#f97316',
+          },
+          fontFamily: {
+            sans: ['Raleway', 'sans-serif'],
+            script: ['Dancing Script', 'cursive'],
+            kalam: ['Kalam', 'sans-serif'],
+          }
+        },
+      },
+    }
+  </script>
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM6g0g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5g5" crossorigin="anonymous">
+  <style>
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.6);
+      opacity: 0.7;
+      animation: float 5s infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+    }
+
+    /* Different sizes and positions for bubbles */
+    .bubble:nth-child(1) {
+      width: 30px;
+      height: 30px;
+      left: 20%;
+      animation-delay: 0s;
+    }
+    .bubble:nth-child(2) {
+      width: 40px;
+      height: 40px;
+      left: 50%;
+      animation-delay: 1s;
+    }
+    .bubble:nth-child(3) {
+      width: 25px;
+      height: 25px;
+      left: 70%;
+      animation-delay: 2s;
+    }
+    .bubble:nth-child(4) {
+      width: 35px;
+      height: 35px;
+      left: 30%;
+      animation-delay: 3s;
+    }
+    .bubble:nth-child(5) {
+      width: 20px;
+      height: 20px;
+      left: 80%;
+      animation-delay: 4s;
+    }
+  </style>
+</head>
+</head>
+<body class="bg-primary-bg flex justify-center items-center h-screen overflow-hidden">
+  <!-- Main Card -->
+  <div class="bg-secondary-bg w-11/12 max-w-6xl rounded-3xl shadow-xl p-8">
+    <!-- Header -->
+    <header class="bg-primary-bg rounded-[10px] p-3 flex justify-between items-center mb-6">
+      <div class="text-xl  font-semibold font-raleway">Veriwoks</div>
+      <nav class="flex space-x-6">
+        <a href="#" class="text-gray-700 hover:underline">Products</a>
+        <a href="#" class="text-gray-700 hover:underline">About</a>
+        <a href="#" class="text-gray-700 hover:underline">App</a>
+        <a href="#" class="text-gray-700 hover:underline">FAQ</a>
+      </nav>
+      <div class="flex space-x-4">
+        <button class="text-gray-700 hover:underline font-raleway">Log In</button>
+        <button class="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 font-raleway">Sign Up</button>
+      </div>
+    </header>
+
+    <!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Main Product Card -->
+    <div class="col-span-2 row-span-2 bg-gray-100 rounded-2xl p-6 relative bg-cover bg-center h-92" style="background-image: url('https://pbs.twimg.com/media/GdtSezVXUAAdQ9T?format=jpg&name=large');">
+        <h1 class="text-4xl font-bold mb-4 text-white font-dancing-script">Discover Your Digital Product.</h1>
+        <button class="absolute bottom-6 left-6 bg-black text-white px-4 py-2 rounded-lg flex items-center space-x-2">
+          <span>See All Products</span>
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+      </div>
+  
+    <!-- Blog Card -->
+    <div class="bg-gray-100 rounded-2xl p-6 flex flex-col justify-between bg-cover bg-center h-64" style="background-image: url('https://pbs.twimg.com/media/Gdt1YWwWkAAPzzn?format=jpg&name=large');">
+        <p class="text-lg font-semibold text-white">Don’t miss the Learning</p>
+        <div class="flex justify-between items-center mt-6 text-white">
+          <p class="text-2xl font-bold">Our Blogs</p>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </div>
+  
+    <!-- Contact Us Card -->
+    <div class="bg-cta text-white rounded-2xl p-6 flex flex-col justify-between bg-cover bg-center h-64" >
+        <p class="text-lg font-semibold">Have awesome Projects?</p>
+        <div class="flex justify-between items-center mt-6">
+          <p class="text-2xl font-bold">Contact Us</p>
+          <i class="fas fa-arrow-right"></i> <!-- Minimalistic arrow icon -->
+        </div>
+      </div>
+  </div>
+  </div>
+</body>
+</html>
